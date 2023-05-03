@@ -22,7 +22,8 @@
             var productsFromLS = JSON.parse(localStorage.getItem("Products"))
             for (var i = 0; i < productsFromLS.length; i++) {
                 finalData += `<div id='singlePro'>
-                                     <img src=${productsFromLS[i].proImage} />
+                                     
+                                    <img src=${productsFromLS[i].proImage} />
                                      <h3>${productsFromLS[i].proName}</h3>
                                       <p> ${productsFromLS[i].proPrice}</p>
                              </div>`;
